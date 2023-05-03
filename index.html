@@ -54,11 +54,53 @@
               <img src="images/cdpr.gif" width="160" height="160">
             </td>
             <td width="75%" valign="middle">
-              <strong>Gulam waris</strong>
+              <strong>Cable Driven Parallel Manipulator</strong>
               <br>
               <p>Ideated and build a 3D model of cable driven manipulator for increased workspace, payload handling and dynamic response.
                 Simulated the model in Mujuco, Solidworks and Gazebo with different cable modelling strategies and Compared for accuracy
                 Integrated gym environment for training imitation RL model on this manipulator for imitating the behaviour of agent’s trajectory</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/niryo.gif" width="160" height="160">
+            </td>
+            <td width="75%" valign="middle">
+              <strong>Gesture Based Pick and Place</strong>
+              <br>
+              <p>Did POC on simulating pick and place scenario with Niryo robot in a warehouse with various objects in Gazebo, Unity for speed
+                 Integrated ROS publisher and subscriber framework in Unity for getting the sending the positions of objects to pick in ros-msg
+                 Created a library of different shapes of objects for instantiating in Unity environment and implemented mouse pointer location
+                 based gesture recognition of object initial and final position and thus, optimal trajectory estimation for robot</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/tof.png" width="160" height="160">
+            </td>
+            <td width="75%" valign="middle">
+              <strong>ToF (Time of flight) sensor based 3-D scanner</strong>
+              <br>
+              <p>built a 3D-object scanner by interfacing ToF (VL53L0X), IMU (MPU6050) sensors with Raspberry Pi.
+                 Designed a unique prototype of the scanner in Solidworks and converted to URDF for simulating in Gazebo using ROS framework.
+                 Calibrated sensors using least squares for bias removal and collected depth information from a programmed rotating platform.
+                 Enforced Complimentary filter algorithm to fuse data of accelerometer and gyroscope to achieve accuracy and denoise data.
+                 Used SLAM techniques for estimation of position of the scanner and accounted for dead-reckoning while determining position.</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/astar.png" width="160" height="160">
+            </td>
+            <td width="75%" valign="middle">
+              <strong>Path planning using A* algorithm in ROS</strong>
+              <br>
+              <p>Wrote a node to find the shortest path using A* and euclidean distance as heuristics for Simultaneous Localization and Mapping
+                 Used this as a plugin in gazebo simulator for the navigation of turtlebot (using ros framework) in a mapped environment
+                 Given multiple goals,created an optimal path for the robot from source to destination in real-time and simulated in gazebo</p>
             </td>
           </tr>
 
